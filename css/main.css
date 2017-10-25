@@ -192,3 +192,21 @@ img[alt="Home"] {
   letter-spacing: 1px;
 
 }
+
+.third-section {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.third-section h2 {
+  padding-top: 50px;
+}
+
+.third-section p {
+  margin-bottom: 30px; 
+}
+
+img[alt="hero"] {
+  margin-top: 30px;
+  width: 1000px;
+}

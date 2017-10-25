@@ -175,3 +175,20 @@ img[alt="Home"] {
  .second-section div h4 {
    color: #fff;
  }
+
+ .second-section div {
+ display: inline-block;
+ margin-right: 100px;
+ margin-bottom: 30px;
+ }
+
+ img[alt="services"] {
+   width: 180px;
+   margin-bottom: 10px;
+ }
+.service h5, h6 {
+  margin: 2px auto;
+  color: #fff;
+  letter-spacing: 1px;
+
+}

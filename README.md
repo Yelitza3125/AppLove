@@ -3,7 +3,7 @@
 
 ## Descripción:
 
-El siguiente repositorio contiene la maquetación de la página web AppLove, a través del uso de las herramientas de HTML5 y CSS3.
+El siguiente repositorio contiene la maquetación de la página web AppLove, a través del uso de las herramientas de HTML5 y CSS3; y las propiedades de posicionamiento.
     
 
 ## Objetivo

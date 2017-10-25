@@ -226,3 +226,21 @@ img[alt="hero"] {
   width: 100%;
   padding-left: 180px;
 }
+
+.third-section p {
+  font-weight: bold;
+}
+
+footer  {
+  width: 1583px;
+  height: 70px;
+  background-color: #373b47;
+  position: relative;
+  top: 2700px;
+}
+
+footer p {
+  position: relative;
+  bottom: 2670px;
+  left: 750px;
+}

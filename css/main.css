@@ -160,3 +160,18 @@ img[alt="Home"] {
    border-style: none;
    padding: 15px;
  }
+
+ .second-section {
+   background-color: #f17c72;
+   font-family: 'Lato', sans-serif;
+   text-align: center;
+ }
+
+ .second-section div h2 {
+   font-size: 35px;
+   color: #fff;
+ }
+
+ .second-section div h4 {
+   color: #fff;
+ }

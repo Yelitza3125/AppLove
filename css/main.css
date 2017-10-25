@@ -72,12 +72,14 @@ a:hover {
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 
+
+/*Reseteando el código. Quitando el valor por defecto de contente-box.*/
 * {
   box-sizing: border-box;
- 
+  font-family:'Raleway', sans-serif;
 }
 
-
+/*sección header. Se estable un ancho de 100% par que ocupe todo el espacio de la pantalla. Se establce la propiedad position a fixed para que se mantenga estática cada vez que el usuario recorra la página web. "z-indez" es para que se le de prioridad y se muestre adelante de los demás elementos*/
 header {
 /*outline: 1px solid red; */
 width: 100%;
@@ -88,17 +90,18 @@ position: fixed;
 z-index: 1000;
 }
 
+/*Seleccionando a los elementos ancla que están dentro de header. Un display inline-block, para que puedan alinearse.*/
 header div a {
   color: #373b47;
   display: inline-block;
-  font-family:'Raleway', sans-serif;
   font-size: 16px;
   font-weight: bold;
+  margin: 40px 20px 20px;
   padding-top: 50px;
-  margin: 40px 20px 20px; 
   position: fixed;
 }
 
+/*el selector id, se utiliza para desplazar, con position relative, las etiquetas ancla: work y team*/
 #work {
   position: relative;
   left: 100px;
@@ -109,12 +112,12 @@ header div a {
   left: 100px;
 }
 
-
-
+/*estableciendo padding al primer elemento del contenedor div que está dentro de header*/
 header div:first-child {
   padding-left: 150px;
 }
 
+/*El selector de clase para el logotipo. Estableciendo inline-block y luego position relative para poder desplazarlo*/
 .logo {
   display: inline-block;
   width: 70px;
@@ -124,46 +127,46 @@ header div:first-child {
   bottom: 20px;
 }
 
+/*Primera sección de la página. Se centra el texto y se establece como background la imagen*/
 .first-section {
   /*outline: 1px solid blue; */
-  font-family: 'Raleway', sans-serif;
   font-weight: 900;
   text-align: center;
   background-image: url("assets/images/bg-home.jpg");
 }
 
+/*Con el selector de atributo, a la imagen como background se le da el ancho total de la sección*/
 img[alt="Home"] {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
-
+/*Con selectores anidados, se da estilo a cada elemento dentro de la primera sección(h2, h1, p y button)*/
 
 .first-section h2 {
-  font-size: 25px;
   color: #fff;
+  display: inline-block;
+  font-size: 25px;
   position: relative;
   top: 200px;
   left: 340px;
-  display: inline-block;
 }
  .first-section h1 {
+   color: #fff;
+   display: inline;
    position: relative;
    top: 320px;
    right: 180px;
    font-size: 40px;
-   color: #fff;
-   display: inline;
  }
 
  .first-section p {
    color: #fff;
+   display: inline-block;
    position: relative;
    top: 300px;
-   left: 100px;
-   display: inline-block;
-   
+   left: 100px; 
  }
 
  .first-section button {
@@ -176,12 +179,13 @@ img[alt="Home"] {
    padding: 15px;
  }
 
+ /*Segunda sección. Se establece color de fondo y la alineación centrada del texto*/
  .second-section {
    background-color: #f17c72;
-   font-family: 'Raleway', sans-serif;
    text-align: center;
  }
 
+ /*Con selectores de anidamiento, se establecen los estilos de cada elemento contenidos dentro de div, que a su vez está dentro de la segunda sección. Son desplazados a través de la propiedad position, relative*/
  .second-section div h2 {
    font-size: 35px;
    color: #fff;
@@ -202,6 +206,7 @@ img[alt="Home"] {
  margin-bottom: 30px;
  }
 
+ /*Con selectores id, se desplazan los contenedores principales de la sección, que contienen a la imagen y los textos*/
  #left {
   position: relative;
   left: 20px;
@@ -217,10 +222,13 @@ img[alt="Home"] {
    left: 130px;
  }
 
+ /*Por medio de un selector de atributo, se establce el añcho de cada imagen y su margen*/
  img[alt="services"] {
    width: 180px;
    margin-bottom: 10px;
  }
+
+ /*Se establace con este selector el estilo a cada subtitulo de la sección (h5y h6); se usa letter-spacing para espaciar las letras*/
 .service h5, h6 {
   margin: 2px auto;
   color: #fff;
@@ -228,8 +236,8 @@ img[alt="Home"] {
 
 }
 
+/*Tercerca sección. Se alinea el texto a centrado*/
 .third-section {
-  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
@@ -241,21 +249,25 @@ img[alt="Home"] {
   margin-bottom: 30px; 
 }
 
+/*Con selector de atributo, la imagen principal es definida en tamaño y el tamaño de separación del elemnto situado arriba de él */
 img[alt="hero"] {
   margin-top: 30px;
   width: 1000px;
 }
 
+/*Con selector de atributo textual, se seleccionan a todos las imágenes cuyo valor del tributo alt, inicia con "work" y se determina su tamaño*/
 .third-section div img[alt|=work] {
   width: 300px;
   height: 300px;
 }
 
+/*Se flotan los contenedores de las imágenes secundarias y se separan unas de otras 40px*/
 .third-section div {
   float: left;
   margin: 40px;
 }
 
+/*Se establece overflow, para contender los elementos flotados*/
 .box-container {
   overflow: auto;
   width: 100%;
@@ -266,6 +278,7 @@ img[alt="hero"] {
   font-weight: bold;
 }
 
+/*Dando estilo a footer */
 footer  {
   width: 1583px;
   height: 70px;
